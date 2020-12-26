@@ -1,0 +1,37 @@
+#+TITLE: Statistic
+* Date: 20201222
+* Type: Homework
+* Department: 東吳經濟
+* Language: `python`
+* Task: Complete homework
+* Data Source:  [[https://finance.yahoo.com][yahoo finance]]
+* Cost: 800 NTD
+* Due
+** TODO 20201229
+** TODO 20210105
+* Reference
+** [[youtube:RIMZ88AZ71U][[Week14][1] 計量回歸分析 理論介紹]]
+** [[youtube:DvZCWhjjNH4][[Week14][2] 計量回歸分析 散布圖]]
+** [[youtube:Twya4tff_jE][[Week14][3] 計量回歸分析 回歸視覺化]]
+** [[youtube:pojC36DrzcU][[Week14][4] 計量回歸分析 估計結果判讀]]
+** [[youtube:dEEM-adfeG0][[Week14][5] 計量回歸分析 估計結果再判讀]]
+** VIX指數 (Volatility Index) 又稱波動指數， 是由 CBOE(芝加哥選擇權交易所) 在1993年推出，為指數選擇權隱含波動率加權平均後所得之指數
+* DONE HW1
+根據 [[https://finance.yahoo.com][yahoo finance]] 網站資料，我們考慮樣本期間 **2019/01/01 - 2020/11/30**
+討論 COVID-19 期間。根據 HW8 的結果，我們得到美國與台灣股市報酬率與其匯率報酬率之間的關係，
+現在我們單純考慮股票市場，題目如下：
+
+1. 請試著對 **波動率指數 (Volatility Index，VIX)** 變化量 與 **S&P500 指數日報酬率** 做出敘述統計。
+   - 平均數、標準差、偏態、峰態
+   - 根據上述結果，討論此兩變數是否符合常態分佈
+   - 相關係數，一階自相關係數
+   - 根據上述結果，討論此兩變數的資料結構
+2. 請試著做出以下分析得到VIX變化量與S&P500指數報酬率的關係為正相關、負相關、無相關。
+   - 相關係數
+   - 散布圖
+   - 迴歸分析
+3. 請試著做出以下分析得到S&P500指數股價報酬與移動平均(`MA5`與`MA20`)的關係為正相關、負相關、無相關。
+   - 相關係數
+   - 散布圖
+   - 回歸分析
+4. 請利用迴歸分析結果，討論移動平均和VIX報酬率對於S&P500報酬的預測能力。
